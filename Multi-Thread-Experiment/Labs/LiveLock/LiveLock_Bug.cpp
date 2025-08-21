@@ -49,6 +49,6 @@ void Livelock_Bug() {
     std::cout << "Livelock_Bug: program may spin forever. If stuck, Debug > Break All.\n";
     std::thread t1(TryLockA), t2(TryLockB);
     t1.join(); t2.join();
-    std::cout << "[Bug] finished (if you see this, 운이 좋음)\n";
+    std::cout << "[Bug] finished\n";
 }
 REGISTER_LAB("Livelock:Bug", Livelock_Bug);
