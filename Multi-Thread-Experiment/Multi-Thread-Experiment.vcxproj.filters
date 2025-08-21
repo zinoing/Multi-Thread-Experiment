@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Common">
+      <UniqueIdentifier>{d4378c88-bf0b-4c57-8978-54c1c424cd95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Labs">
+      <UniqueIdentifier>{92a48397-3821-423c-96e9-8457a2de8c03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Labs\DataRace">
+      <UniqueIdentifier>{a4e6689c-5660-4550-963d-8228228d62d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Labs\DeadLock">
+      <UniqueIdentifier>{42e5252f-6f70-4e83-adf5-3264e8dc2097}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Common">
+      <UniqueIdentifier>{92a52f8c-ee61-4cb5-9eea-dc1cac0db9ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Labs">
+      <UniqueIdentifier>{51ac104a-f832-4262-9673-a3a2cd754bb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Labs\DataRace">
+      <UniqueIdentifier>{41d3922c-558e-41b9-b9c9-169a6d16002d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Labs\DeadLock">
+      <UniqueIdentifier>{a2d9c0a3-ec4d-4dff-9f95-ff720ee9696c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Labs\LiveLock">
+      <UniqueIdentifier>{1153b1d4-a443-4ce2-a04d-b85c62c5fe10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Labs\LiveLock">
+      <UniqueIdentifier>{9cb791c2-10a1-4b20-bd8b-4a949fbce9f3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Multi-Thread-Experiment.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Lap.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Labs\DataRace\DataRace_Bug.cpp">
+      <Filter>Source Files\Labs\DataRace</Filter>
+    </ClCompile>
+    <ClCompile Include="Labs\DataRace\DataRace_Fix_Atomic.cpp">
+      <Filter>Source Files\Labs\DataRace</Filter>
+    </ClCompile>
+    <ClCompile Include="Labs\DataRace\DataRace_Fix_Mutex.cpp">
+      <Filter>Source Files\Labs\DataRace</Filter>
+    </ClCompile>
+    <ClCompile Include="Labs\DataRace\DataRace_Run.cpp">
+      <Filter>Source Files\Labs\DataRace</Filter>
+    </ClCompile>
+    <ClCompile Include="Labs\DeadLock\DeadLock_Bug.cpp">
+      <Filter>Source Files\Labs\DeadLock</Filter>
+    </ClCompile>
+    <ClCompile Include="Labs\DeadLock\DeadLock_Fix_Order.cpp">
+      <Filter>Source Files\Labs\DeadLock</Filter>
+    </ClCompile>
+    <ClCompile Include="Labs\DeadLock\DeadLock_Fix_ScopedLock.cpp">
+      <Filter>Source Files\Labs\DeadLock</Filter>
+    </ClCompile>
+    <ClCompile Include="Labs\DeadLock\DeadLock_Run.cpp">
+      <Filter>Source Files\Labs\DeadLock</Filter>
+    </ClCompile>
+    <ClCompile Include="Labs\LiveLock\LiveLock_Bug.cpp">
+      <Filter>Source Files\Labs\LiveLock</Filter>
+    </ClCompile>
+    <ClCompile Include="Labs\LiveLock\LiveLock_Fix_Backoff.cpp">
+      <Filter>Source Files\Labs\LiveLock</Filter>
+    </ClCompile>
+    <ClCompile Include="Labs\LiveLock\LiveLock_Fix_ScopedLock.cpp">
+      <Filter>Source Files\Labs\LiveLock</Filter>
+    </ClCompile>
+    <ClCompile Include="Labs\LiveLock\LiveLock_Run.cpp">
+      <Filter>Source Files\Labs\LiveLock</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Common\Bench.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Lab.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Labs\DataRace\DataRace.h">
+      <Filter>Header Files\Labs\DataRace</Filter>
+    </ClInclude>
+    <ClInclude Include="Labs\DeadLock\DeadLock.h">
+      <Filter>Header Files\Labs\DeadLock</Filter>
+    </ClInclude>
+    <ClInclude Include="Labs\LiveLock\LiveLock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
